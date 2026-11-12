@@ -1,0 +1,57 @@
+# Python and tools
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Builds and packaging
+build/
+dist/
+_CPack_Packages/
+CMakeCache.txt
+CMakeFiles/
+*.zip
+*.tar.gz
+
+# Keep local clinical data, generated scenes and revisions outside the source tree.
+data/
+private_data/
+local_cases/
+revisions/
+outputs/
+*.stl
+*.STL
+*.obj
+*.ply
+*.vtk
+*.vtp
+*.dcm
+*.nrrd
+*.nii
+*.nii.gz
+*.mrb
+*.mrml
+*.mrk.json
+*.fcsv
+
+# JSON/CSV metadata may also contain private data. These common output names
+# are ignored, but review every staged file; .gitignore is not a privacy filter.
+*_results.json
+*_measurements.csv
+*_landmarks.csv
+pipeline_manifest.json
+pipeline_status.json
+scene_validation.json
+resolved_config.json
+config.template.json
+components.csv
+inspection.json
+config.reviewed.json
+run-*/
